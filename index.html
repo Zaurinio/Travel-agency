@@ -7,14 +7,27 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a href="#" class="main-header-logo">
+			<a class="main-header-logo">
 				<img src="#" width="100" height="100" alt="Agency MOCCO GROUP logo">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
-				<li><a href="#">Tour</a></li>
-				<li><a href="#">Hotels</a></li>
+				<li><a href="#">Tour</a>
+					<ul class="tour-navigation">
+						<li>Top tours</li>
+						<li>For all family</li>
+						<li>Last minute tours</li>						
+					</ul>
+				</li>
+				<li><a href="#">Hotels</a>
+					<ul class="hotels-navigation">
+						<li>Appartments</li>
+						<li>Hostels</li>
+						<li>Cottages</li>
+						<li>Luxe appartments</li>
+					</ul>
+				</li>
 				<li><a href="#">Blog</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#"><span class="visually-hidden">Search</span></a></li>
@@ -27,44 +40,49 @@
 
 	<main>
 		<h1 class="visually-hidden">Travel agency MOCCO GROUP</h1>
-		<section class="about-us">
-			<h2 class="visually-hidden">About us</h2>
-			<p class="about-us-title">World Best Travell Agency</p>
-			<p class="about-us-profit">Save Upto 40% For Upcoming Summer</p>
-			<p class="about-us-offer">Starts From $250 Only (2 Days, 3 Nights)</p>
-			<p class="about-us-information">
+		<section class="promo">			
+			<h2 class="title-main">World Best Travell Agency</h2>
+			<p class="sub-title">Save Upto 40% For Upcoming Summer</p>
+			<p class="promo-offer">Starts From $250 Only (2 Days, 3 Nights)</p>
+			<p class="promo-information">
 				<a href="#" class="button">Explore Now</a>
 			</p>
 		</section>
 
 		<section class="feature-trips">
-			<p class="feature-trips-title">Our Agency</p>
-			<h2>Feature Trip</h2>
-			<p class="feature-trips-description">Accusamus et iusto odio bolo dignissimos ducimus qui lawer blandits praesentium Accus amus et iusto odio bolo atque volup tatum delenite.</p>
-			<p class="feature-trips-booking">
-				<a href="#" class="button">Book now</a>
-			</p>
+			<div class="feature-trips-wrapper">
+				<h2 class="title-main">Our Agency</h2>
+				<p class="sub-title">Feature Trip</p>
+				<div class="feature-trips-description">
+					<p>Accusamus et iusto odio bolo dignissimos ducimus qui lawer blandits praesentium Accus amus et iusto odio bolo atque volup tatum delenite.</p>
+				</div>
+				<p class="feature-trips-booking">
+					<a href="#" class="button">Book now</a>
+				</p>
+			</div>
 			<ul class="feature-trips-list">
-				<li class="feature-trips-item">
+				<li>
 					<img src="#" width="100" height="50">
 					<p class="feature-trips-destination">London, England</p>
-					<p class="feature-trips-rating">Rating :</p>
+					<p class="feature-trips-rating">Rating :<span class="feature-trips-stars"></span></p>
 					<p class="feature-trips-info">
 						<a href="#" class="button">Discover</a>
 					</p>
 				</li>
-				<li class="feature-trips-item">
+				<li>
 					<img src="#" width="100" height="50">
 					<p class="feature-trips-destination">Dubai, UAE</p>
-					<p class="feature-trips-rating">Rating :</p>
+					<p class="feature-trips-rating">Rating :<span class="feature-trips-stars"></span></p>
 					<p class="feature-trips-info">
 						<a href="#" class="button">Discover</a>
 					</p>
 				</li>
-				<li class="feature-trips-item">
-					<img src="#" width="100" height="50">
+				<li>
+					<a href="#" class="feature-trips-image">
+						<img src="#" width="100" height="50">
+					</a>
 					<p class="feature-trips-destination">Bern, Switzerland</p>
-					<p class="feature-trips-rating">Rating :</p>
+					<p class="feature-trips-rating">Rating :<span class="feature-trips-stars"></span></p>
 					<p class="feature-trips-info">
 						<a href="#" class="button">Discover</a>
 					</p>
@@ -72,55 +90,61 @@
 			</ul>
 		</section>
 
+		<section class="convenience">			
+			<h2 class="title-main">Provide Packege</h2>
+			<p class="sub-title">Convenience</p>
+			<div class="convenience-slider">
+				<ul class="convenience-list">					
+					<li class="convenience-item">
+						<figure class="convenience-image">
+							<img src="#" width="50" height="50" alt="Hotel Facilities">
+						</figure>
+						<p class="convenience-item-title">Hotel Facilities</p>
+						<p class="convenience-item-description">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
+					</li>
+					<li class="convenience-item">
+						<figure class="convenience-image">
+							<img src="#" width="50" height="50" alt="Tourist Guide">
+						</figure>
+						<p class="convenience-item-title">Tourist Guide</p>
+						<p class="convenience-item-description">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
+					</li>
+					<li class="convenience-item">
+						<figure class="convenience-image">
+							<img src="#" width="50" height="50" alt="Air Ticket">
+						</figure>
+						<p class="convenience-item-title">Air Ticket</p>
+						<p class="convenience-item-description">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
+					</li>					
+				</ul>
+				<div class="convenience-slider-buttons">
+					<button class="button-left" type="button">
+						<span class="visually-hidden">Prev slider</span>
+					</button>
+					<button class="button-right" type="button">
+						<span class="visually-hidden">Next slider</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
 		<section class="services">
-			<h2 class="visually-hidden">Our services</h2>
-			<p class="services-title">Provide Packege</p>
-			<p class="services-offer">Convenience</p>
-			<ul class="convenience-list">
-				<li class="arrow">
-					<span class="visually-hidden">Left</span>
-				</li>
-				<li class="convenience-item">
-					<figure class="convenience-image">
-						<img src="#" width="50" height="50" alt="Hotel Facilities">
-					</figure>
-					<p class="convenience-item-title">Hotel Facilities</p>
-					<p class="convenience-item-description">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
-				</li>
-				<li class="convenience-item">
-					<figure class="convenience-image">
-						<img src="#" width="50" height="50" alt="Tourist Guide">
-					</figure>
-					<p class="convenience-item-title">Tourist Guide</p>
-					<p class="convenience-item-description">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
-				</li>
-				<li class="convenience-item">
-					<figure class="convenience-image">
-						<img src="#" width="50" height="50" alt="Air Ticket">
-					</figure>
-					<p class="convenience-item-title">Air Ticket</p>
-					<p class="convenience-item-description">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
-				</li>
-				<li class="arrow">
-					<span class="visually-hidden">Right</span>
-				</li>
-			</ul>
-			<p class="services-title">We Take Best Care</p>
-			<p class="services-offer">Why Choose Us?</p>
+			<h2 class="title-main">We Take Best Care</h2>
+			<p class="sub-title">Why Choose Us?</p>
 			<ul class="choose-list">
-				<li class="choose-item">
+				<li>
 					<p class="choose-item-title">Unlimited Room Available.</p>
 					<p class="choose-item-description">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol.</p>
 				</li>
-				<li class="choose-item">
+				<li>
 					<p class="choose-item-title">Air / Bus Ticket Provide By Us.</p>
 					<p class="choose-item-description">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol.</p>
 				</li>
-				<li class="choose-item">
+				<li>
 					<p class="choose-item-title">Custome Packege Available.</p>
 					<p class="choose-item-description">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol.</p>
 				</li>
-				<li class="choose-item">
+				<li">
 					<p class="choose-item-title">100% Safe and Luxury Journey.</p>
 					<p class="choose-item-description">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol.</p>
 				</li>
@@ -128,110 +152,194 @@
 		</section>
 
 		<section class="tour-packages">
-			<p class="tour-packages-title">Our Agency Provide</p>
-			<h2>Top Tour Packege</h2>
-			<ul class="tour-packages-list">
-				<li class="tour-packages-item arrow"><span class="visually-hidden">Left</span></li>
-				<li class="tour-packages-item">
-					<figure class="tour-packages-image">
-						<img src="#" width="100" height="200">
-					</figure>					
-					<p class="tour-packages-transfer">By air</p>
-					<p class="tour-packages-title">Katmundu, Nepal</p>
-					<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
-					<p class="tour-packages-oldprice">$454</p>
-					<p class="tour-packages-price">$350</p>
-					<p class="tour-packages-days">2 Day</p>
-					<p class="tour-packages-nights">3 Night</p>
-					<p class="tour-packages-rating">Rating:</p>
-					<p class="tour-packages-review">I 5+ Review:</p>
-					<p class="tour-packages-booking">
-						<a href="#" class="button">Book Now</a>
-					</p>
-				</li>
-				<li class="tour-packages-item">
-					<figure class="tour-packages-image">
-						<img src="#" width="100" height="200">
-					</figure>					
-					<p class="tour-packages-transfer">By air</p>
-					<p class="tour-packages-title">Dubai, UAE</p>
-					<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
-					<p class="tour-packages-oldprice">$800</p>
-					<p class="tour-packages-price">$500</p>
-					<p class="tour-packages-days">3 Day</p>
-					<p class="tour-packages-nights">4 Night</p>
-					<p class="tour-packages-rating">Rating:</p>
-					<p class="tour-packages-review">I 15+ Review:</p>
-					<p class="tour-packages-booking">
-						<a href="#" class="button">Book Now</a>
-					</p>
-				</li>
-				<li class="tour-packages-item">
-					<figure class="tour-packages-image">
-						<img src="#" width="100" height="200">
-					</figure>					
-					<p class="tour-packages-transfer">By road</p>
-					<p class="tour-packages-title">Katmundu, Nepal</p>
-					<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
-					<p class="tour-packages-oldprice">$454</p>
-					<p class="tour-packages-price">$350</p>
-					<p class="tour-packages-days">2 Day</p>
-					<p class="tour-packages-nights">3 Night</p>
-					<p class="tour-packages-rating">Rating:</p>
-					<p class="tour-packages-review">I 5+ Review:</p>
-					<p class="tour-packages-booking">
-						<a href="#" class="button">Book Now</a>
-					</p>
-				</li>
-				<li class="tour-packages-item">
-					<figure class="tour-packages-image">
-						<img src="#" width="100" height="200">
-					</figure>					
-					<p class="tour-packages-transfer">By air</p>
-					<p class="tour-packages-title">Burn, Slovenia</p>
-					<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
-					<p class="tour-packages-oldprice">$499</p>
-					<p class="tour-packages-price">$400</p>
-					<p class="tour-packages-days">2 Day</p>
-					<p class="tour-packages-nights">3 Night</p>
-					<p class="tour-packages-rating">Rating:</p>
-					<p class="tour-packages-review">I 10+ Review:</p>
-					<p class="tour-packages-booking">
-						<a href="#" class="button">Book Now</a>
-					</p>
-				</li>
-				<li class="tour-packages-item">
-					<figure class="tour-packages-image">
-						<img src="#" width="100" height="200">
-					</figure>					
-					<p class="tour-packages-transfer">By air</p>
-					<p class="tour-packages-title">Katmundu, Nepal</p>
-					<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
-					<p class="tour-packages-oldprice">$454</p>
-					<p class="tour-packages-price">$350</p>
-					<p class="tour-packages-days">2 Day</p>
-					<p class="tour-packages-nights">3 Night</p>
-					<p class="tour-packages-rating">Rating:</p>
-					<p class="tour-packages-review">I 5+ Review:</p>
-					<p class="tour-packages-booking">
-						<a href="#" class="button">Book Now</a>
-					</p>
-				</li>
-				<li class="tour-packages-item arrow"><span class="visually-hidden">Right</span></li>
-			</ul>
-			<p class="tour-packages-custom">Custome PaCkege</p>
-			<ul class="custom-package-list">
-				<li class="custom-package-item">Location</li>
-				<li class="custom-package-item">Check In</li>
-				<li class="custom-package-item">Check Out</li>
-				<li class="custom-package-item">People</li>
-				<li class="custom-package-item"><a href="#" class="button">Book now</a></li>
-			</ul>
+			<h2 class="title-main">Our Agency Provide</h2>
+			<p class="sub-title">Top Tour Packege</p>
+			<div class="tour-packages-slider">
+				<ul class="tour-packages-list">					
+					<li class="tour-packages-item">
+						<figure class="tour-packages-image">
+							<a href="#">
+								<img src="#" width="100" height="200">
+							</a>
+							<p class="tour-packages-transfer">By air</p>
+						</figure>
+						<div class="tour-packages-content">
+							<div class="tour-packages-text">		
+								<p class="tour-packages-title">
+									<a href="#">Katmundu, Nepal</a>
+								</p>
+								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
+							</div>
+							<p class="tour-packages-price">
+								<del>$454</del>
+								<ins>$350</ins>
+							</p>
+							<p class="tour-packages-duration">
+								<span class="tour-packages-days">2 Day</span>
+								<span class="tour-packages-nights">3 Night</span>
+							</p>
+							<div class="tour-packages-info">
+								<div class="tour-packages-statistics">
+									<p class="tour-packages-rating">Rating:</p>
+									<a class="tour-packages-review">I 5+ Review:</a>
+								</div>
+								<a href="#" class="button tour-packages-booking">Book Now</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour-packages-item">
+						<figure class="tour-packages-image">
+							<a href="#">
+								<img src="#" width="100" height="200">
+							</a>
+							<p class="tour-packages-transfer">By air</p>
+						</figure>
+						<div class="tour-packages-content">
+							<div class="tour-packages-text">		
+								<p class="tour-packages-title">
+									<a href="#">Dubai, UAE</a>
+								</p>
+								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
+							</div>
+							<p class="tour-packages-price">
+								<del>$800</del>
+								<ins>$500</ins>
+							</p>
+							<p class="tour-packages-duration">
+								<span class="tour-packages-days">3 Day</span>
+								<span class="tour-packages-nights">4 Night</span>
+							</p>
+							<div class="tour-packages-info">
+								<div class="tour-packages-statistics">
+									<p class="tour-packages-rating">Rating:</p>
+									<a class="tour-packages-review">I 15+ Review:</a>
+								</div>
+								<a href="#" class="button tour-packages-booking">Book Now</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour-packages-item">
+						<figure class="tour-packages-image">
+							<a href="#">
+								<img src="#" width="100" height="200">
+							</a>
+							<p class="tour-packages-transfer">By road</p>
+						</figure>
+						<div class="tour-packages-content">
+							<div class="tour-packages-text">		
+								<p class="tour-packages-title">
+									<a href="#">Katmundu, Nepal</a>
+								</p>
+								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
+							</div>
+							<p class="tour-packages-price">
+								<del>$454</del>
+								<ins>$350</ins>
+							</p>
+							<p class="tour-packages-duration">
+								<span class="tour-packages-days">2 Day</span>
+								<span class="tour-packages-nights">3 Night</span>
+							</p>
+							<div class="tour-packages-info">
+								<div class="tour-packages-statistics">
+									<p class="tour-packages-rating">Rating:</p>
+									<a class="tour-packages-review">I 5+ Review:</a>
+								</div>
+								<a href="#" class="button tour-packages-booking">Book Now</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour-packages-item">
+						<figure class="tour-packages-image">
+							<a href="#">
+								<img src="#" width="100" height="200">
+							</a>
+							<p class="tour-packages-transfer">By air</p>
+						</figure>
+						<div class="tour-packages-content">
+							<div class="tour-packages-text">		
+								<p class="tour-packages-title">
+									<a href="#">Burn, Slovenia</a>	
+								</p>
+								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
+							</div>
+							<p class="tour-packages-price">
+								<del>$499</del>
+								<ins>$400</ins>
+							</p>
+							<p class="tour-packages-duration">
+								<span class="tour-packages-days">2 Day</span>
+								<span class="tour-packages-nights">3 Night</span>
+							</p>
+							<div class="tour-packages-info">
+								<div class="tour-packages-statistics">
+									<p class="tour-packages-rating">Rating:</p>
+									<a class="tour-packages-review">I 10+ Review:</a>
+								</div>
+								<a href="#" class="button tour-packages-booking">Book Now</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour-packages-item">
+						<figure class="tour-packages-image">
+							<a href="#">
+								<img src="#" width="100" height="200">
+							</a>
+							<p class="tour-packages-transfer">By air</p>
+						</figure>
+						<div class="tour-packages-content">
+							<div class="tour-packages-text">		
+								<p class="tour-packages-title">
+									<a href="#">Katmundu, Nepal</a>
+								</p>
+								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
+							</div>
+							<p class="tour-packages-price">
+								<del>$454</del>
+								<ins>$350</ins>
+							</p>
+							<p class="tour-packages-duration">
+								<span class="tour-packages-days">2 Day</span>
+								<span class="tour-packages-nights">3 Night</span>
+							</p>
+							<div class="tour-packages-info">
+								<div class="tour-packages-statistics">
+									<p class="tour-packages-rating">Rating:</p>
+									<a class="tour-packages-review">I 5+ Review:</a>
+								</div>
+								<a href="#" class="button tour-packages-booking">Book Now</a>
+							</div>
+						</div>
+					</li>
+					<div class="tour-packages-slider-buttons">
+						<button class="button-left" type="button">
+							<span class="visually-hidden">Prev slider</span>
+						</button>
+						<button class="button-right" type="button">
+							<span class="visually-hidden">Next slider</span>
+						</button>
+					</div>
+				</ul>
+			</div>
+
+			<h2>Custome PaCkege</h2>
+			<form class="custom-package-form">
+				<input type="text" name="location-form" placeholder="Location">
+				<input type="date" name="date-form" placeholder="Check In">
+				<input type="date" name="date-form" placeholder="Check In">
+				<select name="people-form">
+					<option value="one">One</option>
+					<option value="two">Two</option>
+					<option value="three">Three</option>
+					<option value="four">Four</option>
+				</select>
+				<button type="submit" class="button">Book now</button>
+			</form>
 		</section>
 
 		<section class="geography">
-			<p class="geography-title">Our Agency Provide Worldwide</p>
-			<h2>Best Tourist Place</h2>
+			<h2 class="title-main">Our Agency Provide Worldwide</h2>
+			<p class="sub-title">Best Tourist Place</p>
 			<p class="geography-description">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness no oncauwho do not know that.</p>
 			<ul class="geography-list">
 				<li class="geography-item">
@@ -240,18 +348,18 @@
 					</figure>
 					<p class="geography-item-title">Europe (12 Countries)</p>
 					<ul class="geography-country-list">
-						<li class="geography-country-item">Belgium.</li>
-						<li class="geography-country-item">Germany.</li>
-						<li class="geography-country-item">Spain.</li>
-						<li class="geography-country-item">Ireland.</li>
-						<li class="geography-country-item">France.</li>
-						<li class="geography-country-item">Iceland.</li>
-						<li class="geography-country-item">Switzerland.</li>
-						<li class="geography-country-item">Denmark.</li>
-						<li class="geography-country-item">Croatia.</li>
-						<li class="geography-country-item">Italy.</li>
-						<li class="geography-country-item">Netherlands.</li>
-						<li class="geography-country-item">Latvia.</li>
+						<li>Belgium.</li>
+						<li>Germany.</li>
+						<li>Spain.</li>
+						<li>Ireland.</li>
+						<li>France.</li>
+						<li>Iceland.</li>
+						<li>Switzerland.</li>
+						<li>Denmark.</li>
+						<li>Croatia.</li>
+						<li>Italy.</li>
+						<li>Netherlands.</li>
+						<li>Latvia.</li>
 					</ul>
 				</li>
 				<li class="geography-item">
@@ -260,17 +368,17 @@
 					</figure>
 					<p class="geography-item-title">Asia (10 Countries)</p>
 					<ul class="geography-country-list">
-						<li class="geography-country-item">Bsngladesh.</li>
-						<li class="geography-country-item">India.</li>
-						<li class="geography-country-item">Singapore.</li>
-						<li class="geography-country-item">Nepal.</li>
-						<li class="geography-country-item">Malaysia.</li>
-						<li class="geography-country-item">Pakistan.</li>
-						<li class="geography-country-item">Philippines.</li>
-						<li class="geography-country-item">Myanmar.</li>
-						<li class="geography-country-item">Indonesia.</li>
-						<li class="geography-country-item">Timor-Leste.</li>
-						<li class="geography-country-item">United Arab Emirates.</li>
+						<li>Bsngladesh.</li>
+						<li>India.</li>
+						<li>Singapore.</li>
+						<li>Nepal.</li>
+						<li>Malaysia.</li>
+						<li>Pakistan.</li>
+						<li>Philippines.</li>
+						<li>Myanmar.</li>
+						<li>Indonesia.</li>
+						<li>Timor-Leste.</li>
+						<li>United Arab Emirates.</li>
 					</ul>
 				</li>
 				<li class="geography-item">
@@ -279,15 +387,15 @@
 					</figure>
 					<p class="geography-item-title">Australia (9 Countries)</p>
 					<ul class="geography-country-list">
-						<li class="geography-country-item">Australia.</li>
-						<li class="geography-country-item">Cook Islands.</li>
-						<li class="geography-country-item">Fiji.</li>
-						<li class="geography-country-item">American Samoa.</li>
-						<li class="geography-country-item">Howland Island.</li>
-						<li class="geography-country-item">Nauru.</li>
-						<li class="geography-country-item">Norfolk Island.</li>
-						<li class="geography-country-item">Croatia.</li>
-						<li class="geography-country-item">Northern Mariana Islands.</li>						
+						<li>Australia.</li>
+						<li>Cook Islands.</li>
+						<li>Fiji.</li>
+						<li>American Samoa.</li>
+						<li>Howland Island.</li>
+						<li>Nauru.</li>
+						<li>Norfolk Island.</li>
+						<li>Croatia.</li>
+						<li>Northern Mariana Islands.</li>						
 					</ul>
 				</li>
 				<li class="geography-item">
@@ -296,18 +404,18 @@
 					</figure>
 					<p class="geography-item-title">Africa (12 Countries)</p>
 					<ul class="geography-country-list">
-						<li class="geography-country-item">Tunisia.</li>
-						<li class="geography-country-item">Ghana.</li>
-						<li class="geography-country-item">Uganda.</li>
-						<li class="geography-country-item">Ivory Coast.</li>
-						<li class="geography-country-item">Botswana.</li>
-						<li class="geography-country-item">Chad.</li>
-						<li class="geography-country-item">Mauritius.</li>
-						<li class="geography-country-item">Mauritania.</li>
-						<li class="geography-country-item">Swaziland.</li>
-						<li class="geography-country-item">Gambia.</li>
-						<li class="geography-country-item">Djibouti.</li>
-						<li class="geography-country-item">Nigeria.</li>					
+						<li>Tunisia.</li>
+						<li>Ghana.</li>
+						<li>Uganda.</li>
+						<li>Ivory Coast.</li>
+						<li>Botswana.</li>
+						<li>Chad.</li>
+						<li>Mauritius.</li>
+						<li>Mauritania.</li>
+						<li>Swaziland.</li>
+						<li>Gambia.</li>
+						<li>Djibouti.</li>
+						<li>Nigeria.</li>					
 					</ul>
 				</li>
 				<li class="geography-item">
@@ -316,16 +424,16 @@
 					</figure>
 					<p class="geography-item-title">N. America (10 Countries)</p>
 					<ul class="geography-country-list">
-						<li class="geography-country-item">United States.</li>
-						<li class="geography-country-item">Canada.</li>
-						<li class="geography-country-item">Mexico.</li>
-						<li class="geography-country-item">Cuba.</li>
-						<li class="geography-country-item">Guatemala.</li>
-						<li class="geography-country-item">Panama.</li>
-						<li class="geography-country-item">Nicaragua.</li>
-						<li class="geography-country-item">The Bahamas.</li>
-						<li class="geography-country-item">The Bahamas.</li>
-						<li class="geography-country-item">Antigua and Barbuda.</li>											
+						<li>United States.</li>
+						<li>Canada.</li>
+						<li>Mexico.</li>
+						<li>Cuba.</li>
+						<li>Guatemala.</li>
+						<li>Panama.</li>
+						<li>Nicaragua.</li>
+						<li>The Bahamas.</li>
+						<li>The Bahamas.</li>
+						<li>Antigua and Barbuda.</li>											
 					</ul>
 				</li>
 				<li class="geography-item">
@@ -334,17 +442,17 @@
 					</figure>
 					<p class="geography-item-title">S. America (11 Countries)</p>
 					<ul class="geography-country-list">
-						<li class="geography-country-item">Argentina.</li>
-						<li class="geography-country-item">Chile.</li>
-						<li class="geography-country-item">Bolivia.</li>
-						<li class="geography-country-item">Brazil.</li>
-						<li class="geography-country-item">Colombia.</li>
-						<li class="geography-country-item">Costa Rica.</li>
-						<li class="geography-country-item">Guatemala.</li>
-						<li class="geography-country-item">Peru.</li>
-						<li class="geography-country-item">Venezuela.</li>
-						<li class="geography-country-item">Paraguay.</li>
-						<li class="geography-country-item">Uruguay.</li>								
+						<li>Argentina.</li>
+						<li>Chile.</li>
+						<li>Bolivia.</li>
+						<li>Brazil.</li>
+						<li>Colombia.</li>
+						<li>Costa Rica.</li>
+						<li>Guatemala.</li>
+						<li>Peru.</li>
+						<li>Venezuela.</li>
+						<li>Paraguay.</li>
+						<li>Uruguay.</li>								
 					</ul>
 				</li>
 			</ul>
@@ -372,84 +480,154 @@
 			</ul>
 		</section>
 
-		<section class="video-tour">
-			<h2 class="visually-hidden">Video presentation</h2>
-			<video src="#" width="200" height="200">Video Tour</video>
-		</section>
+		<div class="video-background">
+			<section class="video-tour">
+				<h2 class="visually-hidden">Video presentation</h2>
+				<video src="#" width="200" height="200">Video Tour</video>
+				<button type="button" name="video-button">Play</button>
+			</section>
 
-		<section class="feedbacks">
-			<p class="feedbacks-title">Tour Memorial Histroy</p>
-			<h2>Client Feedback</h2>
-			<ul class="feedbacks-list">
-				<li class="feedbacks-item">
-					<figure>
-						<img src="#" class="feedbacks-item-image" alt="Client image">
-					</figure>
-					<!-- <p class="feedbacks-item-text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
-					<p class="feedbacks-item-name">Dee C. Mendez</p>
-					<p class="feedbacks-item-profession">Graphic Designer</p>
-					<p class="feedbacks-item-rating">Personal Rating :</p>	 -->				
-				</li>
-				<li class="feedbacks-item">
-					<figure>
-						<img src="#" class="feedbacks-item-image" alt="Client image">
-					</figure>
-					<p class="feedbacks-item-text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
-					<p class="feedbacks-item-name">Dee C. Mendez</p>
-					<p class="feedbacks-item-profession">Graphic Designer</p>
-					<p class="feedbacks-item-rating">Personal Rating :</p>					
-				</li>
-				<li class="feedbacks-item">
-					<figure>
-						<img src="#" class="feedbacks-item-image" alt="Client image">
-					</figure>
-					<!-- <p class="feedbacks-item-text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
-					<p class="feedbacks-item-name">Dee C. Mendez</p>
-					<p class="feedbacks-item-profession">Graphic Designer</p>
-					<p class="feedbacks-item-rating">Personal Rating :</p>	 -->				
-				</li>
-			</ul>
-		</section>
+			<section class="feedbacks">
+				<h2 class="title-main">Tour Memorial Histroy</h2>
+				<p class="sub-title">Client Feedback</p>
+				<div class="feedbacks-slider">
+					<ul class="feedbacks-list">
+						<li class="feedbacks-item">
+							<figure>
+								<img src="#" class="feedbacks-item-image" alt="Client image">
+							</figure>
+							<div class="feedbacks-item-content">
+								<blockquote class="feedbacks-item-text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</blockquote>
+								<div class="feedbacks-item-attributes">	
+									<p class="feedbacks-item-author"><cite>Dee C. Mendez</cite> Graphic Designer</p>
+									<p class="feedbacks-item-rating">Personal Rating :<span></span></p>
+								</div>
+							</div>				
+						</li>
+						<li class="feedbacks-item">
+							<figure>
+								<img src="#" class="feedbacks-item-image" alt="Client image">
+							</figure>
+							<div class="feedbacks-item-content">
+								<blockquote class="feedbacks-item-text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</blockquote>
+								<div class="feedbacks-item-attributes">	
+									<p class="feedbacks-item-author"><cite>Dee C. Mendez</cite> Graphic Designer</p>
+									<p class="feedbacks-item-rating">Personal Rating :<span></span></p>
+								</div>
+							</div>				
+						</li>
+						<li class="feedbacks-item">
+							<figure>
+								<img src="#" class="feedbacks-item-image" alt="Client image">
+							</figure>
+							<div class="feedbacks-item-content">
+								<blockquote class="feedbacks-item-text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</blockquote>
+								<div class="feedbacks-item-attributes">	
+									<p class="feedbacks-item-author"><cite>Dee C. Mendez</cite> Graphic Designer</p>
+									<p class="feedbacks-item-rating">Personal Rating :<span></span></p>
+								</div>
+							</div>	
+						</li>
+						<div class="feedbacks-slider-buttons">
+							<button class="button-left" type="button">
+								<span class="visually-hidden">Prev slider</span>
+							</button>
+							<button class="button-right" type="button">
+								<span class="visually-hidden">Next slider</span>
+							</button>
+						</div>
+					</ul>
+				</div>
+			</section>
+		</div>
 
 		<section class="blog">
-			<p class="blog-title">Our Agency</p>
-			<h2>Latest Blog</h2>
+			<h2 class="title-main">Our Agency</h2>
+			<p class="sub-title">Latest Blog</p>
 			<ul class="blog-list">
 				<li class="blog-item">
-					<figure class="blog-item-image">
-						<img src="#" width="100" height="200" alt="Blog image">
-					</figure>
-					<p class="blog-item-title">Always free from repetition.</p>
-					<p class="blog-item-description">Pleasure and praising pain was born will give you a complete account of the complete account of the .</p>
-					<p class="blog-item-date">25 Dec 18</p>
-					<p class="blog-item-time">4:15 PM</p>
+					<article>
+						<figure class="blog-item-image">
+							<a href="#">
+								<img src="#" width="100" height="200" alt="Blog image">
+							</a>
+						</figure>
+						<div class="blog-item-content">
+							<h3 class="blog-item-title">
+								<a href="#">Always free from repetition.</a>
+							</h3>
+							<p class="blog-item-description">Pleasure and praising pain was born will give you a complete account of the complete account of the .</p>
+							<p>
+								<time datetime="2018-12-25T16:15">
+									<span class="blog-item-date">25 Dec 18</span>
+									<span class="blog-item-time">4:15 PM</span>
+								</time>							
+							</p>
+						</div>
+					</article>
 				</li>
 				<li class="blog-item">
-					<figure class="blog-item-image">
-						<img src="#" width="100" height="200" alt="Blog image">
-					</figure>
-					<p class="blog-item-title">Comes from a line in section.</p>
-					<p class="blog-item-description">Pleasure and praising pain was born will give you a complete account of the complete account of the .</p>
-					<p class="blog-item-date">22 Dec 18</p>
-					<p class="blog-item-time">10:15 PM</p>
+					<article>
+						<figure class="blog-item-image">
+							<a href="#">
+								<img src="#" width="100" height="200" alt="Blog image">
+							</a>
+						</figure>
+						<div class="blog-item-content">
+							<h3 class="blog-item-title">
+								<a href="#">Comes from a line in section.</a>
+							</h3>
+							<p class="blog-item-description">Pleasure and praising pain was born will give you a complete account of the complete account of the .</p>
+							<p>
+								<time datetime="2018-12-22T10:15">
+									<span class="blog-item-date">22 Dec 18</span>
+									<span class="blog-item-time">10:15 PM</span>
+								</time>							
+							</p>
+						</div>
+					</article>
 				</li>
 				<li class="blog-item">
-					<figure class="blog-item-image">
-						<img src="#" width="100" height="200" alt="Blog image">
-					</figure>
-					<p class="blog-item-title">Fugiat quo voluptas all pariatur?</p>
-					<p class="blog-item-description">Pleasure and praising pain was born will give you a complete account of the complete account of the .</p>
-					<p class="blog-item-date">21 Dec 18</p>
-					<p class="blog-item-time">12:00 PM</p>
+					<article>
+						<figure class="blog-item-image">
+							<a href="#">
+								<img src="#" width="100" height="200" alt="Blog image">
+							</a>
+						</figure>
+						<div class="blog-item-content">
+							<h3 class="blog-item-title">
+								<a href="#">Fugiat quo voluptas all pariatur?</a>
+							</h3>
+							<p class="blog-item-description">Pleasure and praising pain was born will give you a complete account of the complete account of the .</p>
+							<p>
+								<time datetime="2018-12-21T12:00">
+									<span class="blog-item-date">21 Dec 18</span>
+									<span class="blog-item-time">12:00 PM</span>
+								</time>							
+							</p>
+						</div>
+					</article>
 				</li>
 				<li class="blog-item">
-					<figure class="blog-item-image">
-						<img src="#" width="100" height="200" alt="Blog image">
-					</figure>
-					<p class="blog-item-title">Praesentium voluptatum deleniti.</p>
-					<p class="blog-item-description">Pleasure and praising pain was born will give you a complete account of the complete account of the .</p>
-					<p class="blog-item-date">20 Dec 18</p>
-					<p class="blog-item-time">6:45 PM</p>
+					<article>
+						<figure class="blog-item-image">
+							<a href="#">
+								<img src="#" width="100" height="200" alt="Blog image">
+							</a>
+						</figure>
+						<div class="blog-item-content">
+							<h3 class="blog-item-title">
+								<a href="#">Praesentium voluptatum deleniti.</a>
+							</h3>
+							<p class="blog-item-description">Pleasure and praising pain was born will give you a complete account of the complete account of the .</p>
+							<p>
+								<time datetime="2018-12-20T18:45">
+									<span class="blog-item-date">20 Dec 18</span>
+									<span class="blog-item-time">6:45 PM</span>
+								</time>							
+							</p>
+						</div>
+					</article>
 				</li>
 			</ul>
 			<p class="blog-referense">
@@ -462,41 +640,45 @@
 			<figure class="application-image">
 				<img src="#" width="100" height="100" alt="IOS application image">
 			</figure>
-			<p class="application-title">Download Our Offical Apps</p>
-			<p class="application-description">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you an account know that.</p>
-			<p class="application-downloadd android">
-				<a href="#" class="button">Available in<span>Play Store</span></a>				
-			</p>
-			<p class="application-downloadd ios">
-				<a href="#" class="button">Available in<span>Apple ISo</span></a>				
-			</p>
+			<div class="application-content">
+				<p class="application-title">Download Our Offical Apps</p>
+				<p class="application-description">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you an account know that.</p>
+				<div class="application-links">
+					<p class="application-downloadd android">
+						<a href="#" class="button">Available in<span>Play Store</span></a>				
+					</p>
+					<p class="application-downloadd ios">
+						<a href="#" class="button">Available in<span>Apple ISo</span></a>				
+					</p>
+				</div>
+			</div>
 		</section>
 
 		<section class="partners">
-			<p class="partners-title">Our Agency</p>
-			<h2>Branding Partner</h2>
+			<h2 class="title-main">Our Agency</h2>
+			<p class="sub-title">Branding Partner</p>
 			<ul class="partners-list">
-				<li class="partners-item">
+				<li>
 					<figure class="partners-item-image">
 						<img src="#" width="100" height="100" alt="Agency Creatives">
 					</figure>
 				</li>
-				<li class="partners-item">
+				<li>
 					<figure class="partners-item-image">
 						<img src="#" width="100" height="100" alt="Agency Creative Design">
 					</figure>
 				</li>
-				<li class="partners-item">
+				<li>
 					<figure class="partners-item-image">
 						<img src="#" width="100" height="100" alt="Agency Vintage hipster style">
 					</figure>
 				</li>
-				<li class="partners-item">
+				<li>
 					<figure class="partners-item-image">
 						<img src="#" width="100" height="100" alt="Agency Retro logo guaranteed">
 					</figure>
 				</li>
-				<li class="partners-item">
+				<li>
 					<figure class="partners-item-image">
 						<img src="#" width="100" height="100" alt="Agency Retro guaranteed">
 					</figure>
@@ -506,93 +688,100 @@
 
 		<section class="subscription">
 			<h2 class="visually-hidden">Subscribe Us</h2>
-			<p class="subscription-title">Subscribe Our NewsLetter</p>
-			<p class="subscription-description">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you an account know that.</p>
+			<div class="subscription-content">
+				<p class="subscription-title">Subscribe Our NewsLetter</p>
+				<p class="subscription-description">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you an account know that.</p>
+			</div>
 			<form class="form-email" action="#" method="get" name="form-email">
 				<input type="email" name="email" placeholder="Enter Email Address">
 				<button class="button" type="submit"><span class="visually-hidden">Отправить</span></button>
 			</form>
 		</section>
 
-		<section class="support">
-			<h2 class="visually-hidden">Support</h2>
-			<p class="support-slogan">We are ready to help you</p>
-			<p class="support-title">Your Message</p>
+		<section class="support">			
+			<h2 class="title-main">We are ready to help you</h2>
+			<p class="sub-title">Your Message</p>
 			<form class="form-support" action="#" method="get" name="form-support">
-				<input type="text" name="fullname" placeholder="Your Full Name">
-				<input type="text" name="address" placeholder="Address Here">
-				<input type="text" name="contacts" placeholder="Email / Phone Number">
-				<textarea name="message" rows="6" placeholder="Your Message"></textarea>
-				<button class="button" type="submit">Submitted</button>
+				<div class="form-input">
+					<input type="text" name="fullname" placeholder="Your Full Name">
+					<input type="text" name="address" placeholder="Address Here">
+					<input type="text" name="contacts" placeholder="Email / Phone Number">
+				</div>
+				<div class="form-textarea">
+					<textarea name="message" rows="6" placeholder="Your Message"></textarea>
+					<button class="button" type="submit">Submitted</button>
+				</div>
 			</form>
 		</section>
 	</main>
 
-	<footer class="main-footer">		
-		<figure class="main-footer-logo">
-			<img src="#" width="50" height="50" alt="Agency MOCCO GROUP logo">
-		</figure>
-		<p class="main-footer-description">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you an account know that.</p>
-		<p class="main-footer-phone">+9685 758 4157-60</p>
-		<p class="main-footer-address">4197 Sumner Street Los Angeles, CA 90017</p>
-		<p class="main-footer-website">Other Website :  <a href="#">www.moccnet.com</a></p>
-		<ul class="main-footer-links-list">
-			<li class="main-footer-links-item">Home</li>
-			<li class="main-footer-links-item">About</li>
-			<li class="main-footer-links-item">Tour</li>
-			<li class="main-footer-links-item">Hotels</li>
-			<li class="main-footer-links-item">Blog</li>
-			<li class="main-footer-links-item">FAQ</li>
-			<li class="main-footer-links-item">Contact</li>
+	<footer class="main-footer">
+		<div class="main-footer-description">	
+			<a>
+				<img src="#" width="50" height="50" alt="Agency MOCCO GROUP logo">
+			</a>
+			<p class="main-footer-description">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you an account know that.</p>
+			<p class="main-footer-phone">+9685 758 4157-60</p>
+			<p class="main-footer-address">4197 Sumner Street Los Angeles, CA 90017</p>
+			<p class="main-footer-website">Other Website :  <a href="#">www.moccnet.com</a></p>
+		</div>
+		<ul class="main-footer-links-list">Useful Link
+			<li>Home</li>
+			<li>About</li>
+			<li>Tour</li>
+			<li>Hotels</li>
+			<li>Blog</li>
+			<li>FAQ</li>
+			<li>Contact</li>
 		</ul>
-		<ul class="main-footer-follow-list">
-			<li class="main-footer-follow-item"><a href="#">facebook</a></li>
-			<li class="main-footer-follow-item"><a href="#">Twitter</a></li>
-			<li class="main-footer-follow-item"><a href="#">Instragram</a></li>
-			<li class="main-footer-follow-item"><a href="#">Linkedin</a></li>
-			<li class="main-footer-follow-item"><a href="#">Google+</a></li>
-			<li class="main-footer-follow-item"><a href="#">Youtube</a></li>
-			<li class="main-footer-follow-item"><a href="#">Pinterest</a></li>
+		<ul class="main-footer-follow-list">Follow Us
+			<li><a href="#">facebook</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Instragram</a></li>
+			<li><a href="#">Linkedin</a></li>
+			<li><a href="#">Google+</a></li>
+			<li><a href="#">Youtube</a></li>
+			<li><a href="#">Pinterest</a></li>
 		</ul>
 		<div class="main-footer-photos">
 			<p>Instagram</p>
 			<ul class="main-footer-photos-list">
-				<li class="main-footer-photos-item">
+				<li>
 					<a href="#">
 						<img src="#" width="30" height="30" alt="Instagram photo">
 					</a>
 				</li>
-				<li class="main-footer-photos-item">
+				<li>
 					<a href="#">
 						<img src="#" width="30" height="30" alt="Instagram photo">
 					</a>
 				</li>
-				<li class="main-footer-photos-item">
+				<li>
 					<a href="#">
 						<img src="#" width="30" height="30" alt="Instagram photo">
 					</a>
 				</li>
-				<li class="main-footer-photos-item">
+				<li>
 					<a href="#">
 						<img src="#" width="30" height="30" alt="Instagram photo">
 					</a>
 				</li>
-				<li class="main-footer-photos-item">
+				<li>
 					<a href="#">
 						<img src="#" width="30" height="30" alt="Instagram photo">
 					</a>
 				</li>
-				<li class="main-footer-photos-item">
+				<li>
 					<a href="#">
 						<img src="#" width="30" height="30" alt="Instagram photo">
 					</a>
 				</li>
-			</ul>
+			</ul>		
+			<form class="form-search" action="#" method="get" name="form-search">
+				<input type="text" name="search" placeholder="Quick Search">
+				<button type="submit" class="search-button"><span class="visually-hidden">Search</span></button>
+			</form>
 		</div>
-		<form class="form-search" action="#" method="get" name="form-search">
-			<input type="text" name="search" placeholder="Quick Search">
-			<button type="submit" class="search-button"><span class="visually-hidden">Search</span></button>
-		</form>
 		<p class="footer-copyright">Copyright © 2018 MOCCO Group Pty Limited</p>
 	</footer>
 </body>
