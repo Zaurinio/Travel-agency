@@ -2,41 +2,54 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>MOCCO GROUP: Travel agency</title>   
+    <title>MOCCO GROUP: Travel agency</title>  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo">
-				<img src="#" width="100" height="100" alt="Agency MOCCO GROUP logo">
-			</a>
-			<ul class="site-navigation">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Tour</a>
-					<ul class="tour-navigation">
-						<li>Top tours</li>
-						<li>For all family</li>
-						<li>Last minute tours</li>						
-					</ul>
-				</li>
-				<li><a href="#">Hotels</a>
-					<ul class="hotels-navigation">
-						<li>Appartments</li>
-						<li>Hostels</li>
-						<li>Cottages</li>
-						<li>Luxe appartments</li>
-					</ul>
-				</li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#"><span class="visually-hidden">Search</span></a></li>
-			</ul>
-			<ul class="user-navigation">
-				<li><a href="#" class="login-link">Book Now</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div class="container">
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="img/logo.png" width="181" height="38" alt="Agency MOCCO GROUP logo">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li class="site-navigation-tour"><a href="#">Tour</a>
+						<div class="site-navigation-style">
+							<ul class="site-navigation-fallout">
+								<li><a href="#">Top&#160tours</a></li>
+								<li><a href="#">For&#160all&#160family</a></li>
+								<li><a href="#">Last&#160minute&#160tours</a></li>						
+							</ul>
+						</div>
+					</li>
+					<li class="site-navigation-hotels"><a href="#">Hotels</a>
+						<div class="site-navigation-style">
+							<ul class="site-navigation-fallout">
+								<li><a href="#">Appartments</a></li>
+								<li><a href="#">Hostels</a></li>
+								<li><a href="#">Cottages</a></li>
+								<li><a href="#">Luxe&#160appartments</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>					
+				</ul>
+				<ul class="user-navigation">
+					<li class="user-navigation-search"><a href="#"><i class="fa fa-search"><span class="visually-hidden">Search</span></i></a></li>
+					<li class="user-navigation-booking"><a href="#" class="login-link">Book Now</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
 	<main>
 		<h1 class="visually-hidden">Travel agency MOCCO GROUP</h1>
@@ -62,7 +75,9 @@
 			</div>
 			<ul class="feature-trips-list">
 				<li>
-					<img src="#" width="100" height="50">
+					<a href="#" class="feature-trips-image">
+						<img src="#" width="100" height="50">
+					</a>
 					<p class="feature-trips-destination">London, England</p>
 					<p class="feature-trips-rating">Rating :<span class="feature-trips-stars"></span></p>
 					<p class="feature-trips-info">
@@ -70,7 +85,9 @@
 					</p>
 				</li>
 				<li>
-					<img src="#" width="100" height="50">
+					<a href="#" class="feature-trips-image">
+						<img src="#" width="100" height="50">
+					</a>
 					<p class="feature-trips-destination">Dubai, UAE</p>
 					<p class="feature-trips-rating">Rating :<span class="feature-trips-stars"></span></p>
 					<p class="feature-trips-info">
@@ -90,29 +107,29 @@
 			</ul>
 		</section>
 
-		<section class="convenience">			
+		<section class="convenience">
 			<h2 class="title-main">Provide Packege</h2>
 			<p class="sub-title">Convenience</p>
 			<div class="convenience-slider">
 				<ul class="convenience-list">					
 					<li class="convenience-item">
-						<figure class="convenience-image">
+						<div class="convenience-image">
 							<img src="#" width="50" height="50" alt="Hotel Facilities">
-						</figure>
+						</div>
 						<p class="convenience-item-title">Hotel Facilities</p>
 						<p class="convenience-item-description">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
 					</li>
 					<li class="convenience-item">
-						<figure class="convenience-image">
+						<div class="convenience-image">
 							<img src="#" width="50" height="50" alt="Tourist Guide">
-						</figure>
+						</div>
 						<p class="convenience-item-title">Tourist Guide</p>
 						<p class="convenience-item-description">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
 					</li>
 					<li class="convenience-item">
-						<figure class="convenience-image">
+						<div class="convenience-image">
 							<img src="#" width="50" height="50" alt="Air Ticket">
-						</figure>
+						</div>
 						<p class="convenience-item-title">Air Ticket</p>
 						<p class="convenience-item-description">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
 					</li>					
@@ -170,14 +187,16 @@
 								</p>
 								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
 							</div>
-							<p class="tour-packages-price">
-								<del>$454</del>
-								<ins>$350</ins>
-							</p>
-							<p class="tour-packages-duration">
-								<span class="tour-packages-days">2 Day</span>
-								<span class="tour-packages-nights">3 Night</span>
-							</p>
+							<div class="tour-packages-terms">
+								<p class="tour-packages-price">
+									<del>$454</del>
+									<ins>$350</ins>
+								</p>
+								<p class="tour-packages-duration">
+									<span class="tour-packages-days">2 Day</span>
+									<span class="tour-packages-nights">3 Night</span>
+								</p>
+							</div>
 							<div class="tour-packages-info">
 								<div class="tour-packages-statistics">
 									<p class="tour-packages-rating">Rating:</p>
@@ -201,14 +220,16 @@
 								</p>
 								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
 							</div>
-							<p class="tour-packages-price">
-								<del>$800</del>
-								<ins>$500</ins>
-							</p>
-							<p class="tour-packages-duration">
-								<span class="tour-packages-days">3 Day</span>
-								<span class="tour-packages-nights">4 Night</span>
-							</p>
+							<div class="tour-packages-terms">
+								<p class="tour-packages-price">
+									<del>$800</del>
+									<ins>$500</ins>
+								</p>
+								<p class="tour-packages-duration">
+									<span class="tour-packages-days">3 Day</span>
+									<span class="tour-packages-nights">4 Night</span>
+								</p>
+							</div>
 							<div class="tour-packages-info">
 								<div class="tour-packages-statistics">
 									<p class="tour-packages-rating">Rating:</p>
@@ -232,14 +253,16 @@
 								</p>
 								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
 							</div>
-							<p class="tour-packages-price">
-								<del>$454</del>
-								<ins>$350</ins>
-							</p>
-							<p class="tour-packages-duration">
-								<span class="tour-packages-days">2 Day</span>
-								<span class="tour-packages-nights">3 Night</span>
-							</p>
+							<div class="tour-packages-terms">
+								<p class="tour-packages-price">
+									<del>$454</del>
+									<ins>$350</ins>
+								</p>
+								<p class="tour-packages-duration">
+									<span class="tour-packages-days">2 Day</span>
+									<span class="tour-packages-nights">3 Night</span>
+								</p>
+							</div>
 							<div class="tour-packages-info">
 								<div class="tour-packages-statistics">
 									<p class="tour-packages-rating">Rating:</p>
@@ -263,14 +286,16 @@
 								</p>
 								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
 							</div>
-							<p class="tour-packages-price">
-								<del>$499</del>
-								<ins>$400</ins>
-							</p>
-							<p class="tour-packages-duration">
-								<span class="tour-packages-days">2 Day</span>
-								<span class="tour-packages-nights">3 Night</span>
-							</p>
+							<div class="tour-packages-terms">
+								<p class="tour-packages-price">
+									<del>$499</del>
+									<ins>$400</ins>
+								</p>
+								<p class="tour-packages-duration">
+									<span class="tour-packages-days">2 Day</span>
+									<span class="tour-packages-nights">3 Night</span>
+								</p>
+							</div>
 							<div class="tour-packages-info">
 								<div class="tour-packages-statistics">
 									<p class="tour-packages-rating">Rating:</p>
@@ -294,14 +319,16 @@
 								</p>
 								<p class="tour-packages-description">Accusamus et iustoAccusamus et iusto odio bolo odio bolo digti odio ball atque.</p>
 							</div>
-							<p class="tour-packages-price">
-								<del>$454</del>
-								<ins>$350</ins>
-							</p>
-							<p class="tour-packages-duration">
-								<span class="tour-packages-days">2 Day</span>
-								<span class="tour-packages-nights">3 Night</span>
-							</p>
+							<div class="tour-packages-terms">
+								<p class="tour-packages-price">
+									<del>$454</del>
+									<ins>$350</ins>
+								</p>
+								<p class="tour-packages-duration">
+									<span class="tour-packages-days">2 Day</span>
+									<span class="tour-packages-nights">3 Night</span>
+								</p>
+							</div>
 							<div class="tour-packages-info">
 								<div class="tour-packages-statistics">
 									<p class="tour-packages-rating">Rating:</p>
@@ -322,19 +349,21 @@
 				</ul>
 			</div>
 
-			<h2>Custome PaCkege</h2>
-			<form class="custom-package-form">
-				<input type="text" name="location-form" placeholder="Location">
-				<input type="date" name="date-form" placeholder="Check In">
-				<input type="date" name="date-form" placeholder="Check In">
-				<select name="people-form">
-					<option value="one">One</option>
-					<option value="two">Two</option>
-					<option value="three">Three</option>
-					<option value="four">Four</option>
-				</select>
-				<button type="submit" class="button">Book now</button>
-			</form>
+			<section class="custom-package">
+				<h2>Custome PaCkege</h2>
+				<form class="custom-package-form">
+					<input type="text" name="location-form" placeholder="Location">
+					<input type="date" name="date-form" placeholder="Check In">
+					<input type="date" name="date-form" placeholder="Check In">
+					<select name="people-form">
+						<option value="one">One</option>
+						<option value="two">Two</option>
+						<option value="three">Three</option>
+						<option value="four">Four</option>
+					</select>
+					<button type="submit" class="button">Book now</button>
+				</form>
+			</section>
 		</section>
 
 		<section class="geography">
@@ -346,114 +375,126 @@
 					<figure class="geography-image">
 						<img src="#" width="50" height="50" alt="Europe (12 Countries)">
 					</figure>
-					<p class="geography-item-title">Europe (12 Countries)</p>
-					<ul class="geography-country-list">
-						<li>Belgium.</li>
-						<li>Germany.</li>
-						<li>Spain.</li>
-						<li>Ireland.</li>
-						<li>France.</li>
-						<li>Iceland.</li>
-						<li>Switzerland.</li>
-						<li>Denmark.</li>
-						<li>Croatia.</li>
-						<li>Italy.</li>
-						<li>Netherlands.</li>
-						<li>Latvia.</li>
-					</ul>
+					<div class="geography-item-content">
+						<p class="geography-item-title">Europe (12 Countries)</p>
+						<ul class="geography-country-list">
+							<li>Belgium.</li>
+							<li>Germany.</li>
+							<li>Spain.</li>
+							<li>Ireland.</li>
+							<li>France.</li>
+							<li>Iceland.</li>
+							<li>Switzerland.</li>
+							<li>Denmark.</li>
+							<li>Croatia.</li>
+							<li>Italy.</li>
+							<li>Netherlands.</li>
+							<li>Latvia.</li>
+						</ul>
+					</div>
 				</li>
 				<li class="geography-item">
 					<figure class="geography-image">
 						<img src="#" width="50" height="50" alt="Asia (10 Countries)">
 					</figure>
-					<p class="geography-item-title">Asia (10 Countries)</p>
-					<ul class="geography-country-list">
-						<li>Bsngladesh.</li>
-						<li>India.</li>
-						<li>Singapore.</li>
-						<li>Nepal.</li>
-						<li>Malaysia.</li>
-						<li>Pakistan.</li>
-						<li>Philippines.</li>
-						<li>Myanmar.</li>
-						<li>Indonesia.</li>
-						<li>Timor-Leste.</li>
-						<li>United Arab Emirates.</li>
-					</ul>
+					<div class="geography-item-content">
+						<p class="geography-item-title">Asia (10 Countries)</p>
+						<ul class="geography-country-list">
+							<li>Bsngladesh.</li>
+							<li>India.</li>
+							<li>Singapore.</li>
+							<li>Nepal.</li>
+							<li>Malaysia.</li>
+							<li>Pakistan.</li>
+							<li>Philippines.</li>
+							<li>Myanmar.</li>
+							<li>Indonesia.</li>
+							<li>Timor-Leste.</li>
+							<li>United Arab Emirates.</li>
+						</ul>
+					</div>
 				</li>
 				<li class="geography-item">
 					<figure class="geography-image">
 						<img src="#" width="50" height="50" alt="Australia (9 Countries)">
 					</figure>
-					<p class="geography-item-title">Australia (9 Countries)</p>
-					<ul class="geography-country-list">
-						<li>Australia.</li>
-						<li>Cook Islands.</li>
-						<li>Fiji.</li>
-						<li>American Samoa.</li>
-						<li>Howland Island.</li>
-						<li>Nauru.</li>
-						<li>Norfolk Island.</li>
-						<li>Croatia.</li>
-						<li>Northern Mariana Islands.</li>						
-					</ul>
+					<div class="geography-item-content">
+						<p class="geography-item-title">Australia (9 Countries)</p>
+						<ul class="geography-country-list">
+							<li>Australia.</li>
+							<li>Cook Islands.</li>
+							<li>Fiji.</li>
+							<li>American Samoa.</li>
+							<li>Howland Island.</li>
+							<li>Nauru.</li>
+							<li>Norfolk Island.</li>
+							<li>Croatia.</li>
+							<li>Northern Mariana Islands.</li>						
+						</ul>
+					</div>
 				</li>
 				<li class="geography-item">
 					<figure class="geography-image">
 						<img src="#" width="50" height="50" alt="Africa (12 Countries)">
 					</figure>
-					<p class="geography-item-title">Africa (12 Countries)</p>
-					<ul class="geography-country-list">
-						<li>Tunisia.</li>
-						<li>Ghana.</li>
-						<li>Uganda.</li>
-						<li>Ivory Coast.</li>
-						<li>Botswana.</li>
-						<li>Chad.</li>
-						<li>Mauritius.</li>
-						<li>Mauritania.</li>
-						<li>Swaziland.</li>
-						<li>Gambia.</li>
-						<li>Djibouti.</li>
-						<li>Nigeria.</li>					
-					</ul>
+					<div class="geography-item-content">
+						<p class="geography-item-title">Africa (12 Countries)</p>
+						<ul class="geography-country-list">
+							<li>Tunisia.</li>
+							<li>Ghana.</li>
+							<li>Uganda.</li>
+							<li>Ivory Coast.</li>
+							<li>Botswana.</li>
+							<li>Chad.</li>
+							<li>Mauritius.</li>
+							<li>Mauritania.</li>
+							<li>Swaziland.</li>
+							<li>Gambia.</li>
+							<li>Djibouti.</li>
+							<li>Nigeria.</li>					
+						</ul>
+					</div>
 				</li>
 				<li class="geography-item">
 					<figure class="geography-image">
 						<img src="#" width="50" height="50" alt="N. America (10 Countries)">
 					</figure>
-					<p class="geography-item-title">N. America (10 Countries)</p>
-					<ul class="geography-country-list">
-						<li>United States.</li>
-						<li>Canada.</li>
-						<li>Mexico.</li>
-						<li>Cuba.</li>
-						<li>Guatemala.</li>
-						<li>Panama.</li>
-						<li>Nicaragua.</li>
-						<li>The Bahamas.</li>
-						<li>The Bahamas.</li>
-						<li>Antigua and Barbuda.</li>											
-					</ul>
+					<div class="geography-item-content">
+						<p class="geography-item-title">N. America (10 Countries)</p>
+						<ul class="geography-country-list">
+							<li>United States.</li>
+							<li>Canada.</li>
+							<li>Mexico.</li>
+							<li>Cuba.</li>
+							<li>Guatemala.</li>
+							<li>Panama.</li>
+							<li>Nicaragua.</li>
+							<li>The Bahamas.</li>
+							<li>The Bahamas.</li>
+							<li>Antigua and Barbuda.</li>											
+						</ul>
+					</div>
 				</li>
 				<li class="geography-item">
 					<figure class="geography-image">
 						<img src="#" width="50" height="50" alt="S. America (11 Countries)">
 					</figure>
-					<p class="geography-item-title">S. America (11 Countries)</p>
-					<ul class="geography-country-list">
-						<li>Argentina.</li>
-						<li>Chile.</li>
-						<li>Bolivia.</li>
-						<li>Brazil.</li>
-						<li>Colombia.</li>
-						<li>Costa Rica.</li>
-						<li>Guatemala.</li>
-						<li>Peru.</li>
-						<li>Venezuela.</li>
-						<li>Paraguay.</li>
-						<li>Uruguay.</li>								
-					</ul>
+					<div class="geography-item-content">
+						<p class="geography-item-title">S. America (11 Countries)</p>
+						<ul class="geography-country-list">
+							<li>Argentina.</li>
+							<li>Chile.</li>
+							<li>Bolivia.</li>
+							<li>Brazil.</li>
+							<li>Colombia.</li>
+							<li>Costa Rica.</li>
+							<li>Guatemala.</li>
+							<li>Peru.</li>
+							<li>Venezuela.</li>
+							<li>Paraguay.</li>
+							<li>Uruguay.</li>								
+						</ul>
+					</div>
 				</li>
 			</ul>
 		</section>
@@ -527,16 +568,16 @@
 									<p class="feedbacks-item-rating">Personal Rating :<span></span></p>
 								</div>
 							</div>	
-						</li>
-						<div class="feedbacks-slider-buttons">
-							<button class="button-left" type="button">
-								<span class="visually-hidden">Prev slider</span>
-							</button>
-							<button class="button-right" type="button">
-								<span class="visually-hidden">Next slider</span>
-							</button>
-						</div>
+						</li>						
 					</ul>
+					<div class="feedbacks-slider-buttons">
+						<button class="button-left" type="button">
+							<span class="visually-hidden">Prev slider</span>
+						</button>
+						<button class="button-right" type="button">
+							<span class="visually-hidden">Next slider</span>
+						</button>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -545,8 +586,8 @@
 			<h2 class="title-main">Our Agency</h2>
 			<p class="sub-title">Latest Blog</p>
 			<ul class="blog-list">
-				<li class="blog-item">
-					<article>
+				<li>
+					<article class="blog-item">
 						<figure class="blog-item-image">
 							<a href="#">
 								<img src="#" width="100" height="200" alt="Blog image">
@@ -566,8 +607,8 @@
 						</div>
 					</article>
 				</li>
-				<li class="blog-item">
-					<article>
+				<li>
+					<article class="blog-item">
 						<figure class="blog-item-image">
 							<a href="#">
 								<img src="#" width="100" height="200" alt="Blog image">
@@ -587,8 +628,8 @@
 						</div>
 					</article>
 				</li>
-				<li class="blog-item">
-					<article>
+				<li>
+					<article class="blog-item">
 						<figure class="blog-item-image">
 							<a href="#">
 								<img src="#" width="100" height="200" alt="Blog image">
@@ -608,8 +649,8 @@
 						</div>
 					</article>
 				</li>
-				<li class="blog-item">
-					<article>
+				<li>
+					<article class="blog-item">
 						<figure class="blog-item-image">
 							<a href="#">
 								<img src="#" width="100" height="200" alt="Blog image">
@@ -717,13 +758,15 @@
 
 	<footer class="main-footer">
 		<div class="main-footer-description">	
-			<a>
+			<a class="main-footer-logo">
 				<img src="#" width="50" height="50" alt="Agency MOCCO GROUP logo">
 			</a>
 			<p class="main-footer-description">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you an account know that.</p>
-			<p class="main-footer-phone">+9685 758 4157-60</p>
-			<p class="main-footer-address">4197 Sumner Street Los Angeles, CA 90017</p>
-			<p class="main-footer-website">Other Website :  <a href="#">www.moccnet.com</a></p>
+			<section class="main-footer-contacts">
+				<p class="main-footer-phone">+9685 758 4157-60</p>
+				<p class="main-footer-address">4197 Sumner Street Los Angeles, CA 90017</p>
+				<p class="main-footer-website">Other Website :  <a href="#">www.moccnet.com</a></p>
+			</section>
 		</div>
 		<ul class="main-footer-links-list">Useful Link
 			<li>Home</li>
