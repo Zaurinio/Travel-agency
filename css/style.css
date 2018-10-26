@@ -1,0 +1,282 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #808080;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.main-header {
+	margin-top: 60px;
+}
+
+.main-navigation {
+	display: flex;	
+}
+
+.main-header-logo img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+.site-navigation {
+	display: flex;	
+	list-style: none;
+	margin: 0;
+	margin-left: auto;
+	padding: 0;
+	padding-top: 7px;
+	position: relative;
+}
+
+.site-navigation li {
+	position: relative;
+}
+
+.site-navigation > li:not(:last-child) {
+	margin-right: 45px;
+}
+
+.site-navigation a {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #222222;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.user-navigation {
+	display: flex;	
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.user-navigation a {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: black;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.site-navigation-fallout {
+	list-style: none;	
+	padding: 0;
+}
+
+.site-navigation-fallout a {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #222222;
+	font-size: 12px;
+	line-height: 26px;
+}
+
+.user-navigation-search {
+	margin-left: 21px;
+	padding-top: 7px;
+}
+
+.user-navigation-search a {
+	width: 13px;
+	height: 13px;
+}
+
+.user-navigation-search a::before {
+	content: "";
+	background-image: url(../img/icon-search.svg);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+}
+
+.fa-search {
+	font-size: 13px;
+
+}
+
+.user-navigation-booking {
+	margin-left: 25px;	
+}
+
+.user-navigation-booking a {
+	display: block;
+	padding: 7px 34px 6px 33px;
+	border-radius: 7px;
+	background-color: #ef5b5b;
+	color: #ffffff; 
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.site-navigation-style {
+	display: none;	
+	position: absolute;
+	padding: 0;
+
+}
+
+.site-navigation li:hover .site-navigation-style {
+	display: block;
+}
+
+.site-navigation li:hover > a {
+	color: #ef5b5b;
+}
+
+.site-navigation-tour::after {
+	content: "";
+	border: 5px solid #222222;
+	border-top-width: 5px;
+	border-right-width: 4px;
+	border-left-width: 4px;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	position: absolute;
+	top: 12px;
+	right: -10px;
+}
+
+.site-navigation-hotels::after {
+	content: "";
+	border: 5px solid #222222;
+	border-top-width: 5px;
+	border-right-width: 4px;
+	border-left-width: 4px;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	position: absolute;
+	top: 12px;
+	right: -10px;
+}
+
+.promo {
+	padding-top: 321px;
+	padding-bottom: 425px;
+	background-image: url(../img/promo-background.jpg);
+	background-repeat: no-repeat;	
+	margin-top: -99px;
+}
+
+.promo p {
+	margin: 0;
+}
+
+.title-main {
+	margin: 0;
+	font-family: 'Segoe Script', sans-serif;
+	font-weight: 400;
+	color: #ef5b5b;
+	font-size: 28px;
+	line-height: 28px;
+}
+
+.promo .title-main {
+	margin-bottom: 33px;
+}
+
+.promo .sub-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 41px;
+	line-height: 41px;
+	color: #222222;
+	margin-bottom: 35px;
+}
+
+.promo .promo-offer {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 28px;
+	color: #222222;
+	margin-bottom: 41px;
+}
+
+.promo-information a {
+	position: relative;
+}
+
+.promo-information a {
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 26px;
+	padding: 14px 26px;
+	background-color: #ef5b5b;
+	border-radius: 7px;
+}
+
+.promo-information a::after {
+	content: "";
+	border: 4px solid #ffffff;
+	border-top-width: 4px;
+	border-right-width: 5px;
+	border-left-width: 5px;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	position: relative;
+	display: inline-block;
+	right: -5px;
+	bottom: 1px;
+	vertical-align: middle;
+}
+
+.feature-trips {
+	display: flex;
+	width: 270px;
+}
+
+.feature-trips-list {
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
