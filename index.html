@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">    
 </head>
-<body>
-	<div class="container">
-		<header class="main-header">
+<body>	
+	<header class="main-header">
+		<div class="container">
 			<nav class="main-navigation">
 				<a class="main-header-logo">
 					<img src="img/logo.png" width="181" height="38" alt="Agency MOCCO GROUP logo">
@@ -18,7 +18,7 @@
 				<ul class="site-navigation">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
-					<li class="site-navigation-tour"><a href="#">Tour</a>
+					<li class="site-navigation-dropdown"><a href="#">Tour</a>
 						<div class="site-navigation-style">
 							<ul class="site-navigation-fallout">
 								<li><a href="#">Top&#160tours</a></li>
@@ -27,7 +27,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="site-navigation-hotels"><a href="#">Hotels</a>
+					<li class="site-navigation-dropdown"><a href="#">Hotels</a>
 						<div class="site-navigation-style">
 							<ul class="site-navigation-fallout">
 								<li><a href="#">Appartments</a></li>
@@ -41,13 +41,13 @@
 					<li><a href="#">Contact</a></li>					
 				</ul>
 				<ul class="user-navigation">
-					<li class="user-navigation-search"><a href="#"><i class="fa fa-search"><span class="visually-hidden">Search</span></i></a></li>
+					<li class="user-navigation-search"><a href="#"><span class="visually-hidden">Search</span></a></li>
 					<li class="user-navigation-booking"><a href="#" class="login-link">Book Now</a></li>
 				</ul>
 			</nav>
-		</header>
-	</div>
-
+		</div>
+	</header>
+	
 	<main>		
 		<h1 class="visually-hidden">Travel agency MOCCO GROUP</h1>
 		<section class="promo">
@@ -78,30 +78,74 @@
 							<img src="img/feature-trip-london.jpg" width="370" height="400">
 						</a>
 						<p class="feature-trips-destination">London, England</p>
-						<p class="feature-trips-rating">Rating :<span class="feature-trips-stars"></span></p>
-						<p class="feature-trips-info">
-							<a href="#" class="button">Discover</a>
-						</p>
+						<div class="feature-trips-info">
+							<p class="feature-trips-rating">Rating :
+								<span class="feature-trips-stars">
+									<svg height="13" width="80">
+										<polygon points="7,0.5 9,4.1 13.6,4.8 10.3,8 11.1,12.6 7,10.5 2.9,12.6 3.6,8 0.5,4.8 4.8,4.1" fill="#ef5b5b"/>
+										<polygon points="24,0.5 26,4.1 30.6,4.8 27.3,8 28.1,12.6 24,10.5 19.9,12.6 20.6,8 17.5,4.8 21.8,4.1" fill="#ef5b5b"/>
+										<polygon points="41,0.5 43,4.1 47.6,4.8 44.3,8 45.1,12.6 41,10.5 36.9,12.6 37.6,8 34.5,4.8 38.8,4.1" fill="#ef5b5b"/>
+										<polygon points="58,0.5 60,4.1 64.6,4.8 61.3,8 62.1,12.6 58,10.5 53.9,12.6 54.6,8 51.5,4.8 55.8,4.1" fill="#ef5b5b"/>
+										<polygon fill="url(#linear-gradient)" points="75,0.5 77,4.1 81.6,4.8 78.3,8 79.1,12.6 75,10.5 70.9,12.6 71.6,8 68.5,4.8 72.8,4.1"/>
+										<lineargradient id="linear-gradient">
+											<stop offset="50%" stop-color="#ef5b5b"/>
+											<stop offset="50%" stop-color="#ffffff"/>
+										</lineargradient>
+									</svg>
+								</span>								
+							</p>
+							<p class="feature-trips-order">
+								<a href="#" class="button">Discover</a>
+							</p>
+						</div>
 					</li>
 					<li>
 						<a href="#" class="feature-trips-image">
 							<img src="img/feature-trip-dubai.jpg" width="370" height="400"">
 						</a>
 						<p class="feature-trips-destination">Dubai, UAE</p>
-						<p class="feature-trips-rating">Rating :<span class="feature-trips-stars"></span></p>
-						<p class="feature-trips-info">
-							<a href="#" class="button">Discover</a>
-						</p>
+						<div class="feature-trips-info">
+							<p class="feature-trips-rating">Rating :
+								<span class="feature-trips-stars">
+									<svg height="13" width="80">
+										<polygon points="7,0.5 9,4.1 13.6,4.8 10.3,8 11.1,12.6 7,10.5 2.9,12.6 3.6,8 0.5,4.8 4.8,4.1" fill="#ef5b5b"/>
+										<polygon points="24,0.5 26,4.1 30.6,4.8 27.3,8 28.1,12.6 24,10.5 19.9,12.6 20.6,8 17.5,4.8 21.8,4.1" fill="#ef5b5b"/>
+										<polygon points="41,0.5 43,4.1 47.6,4.8 44.3,8 45.1,12.6 41,10.5 36.9,12.6 37.6,8 34.5,4.8 38.8,4.1" fill="#ef5b5b"/>
+										<polygon points="58,0.5 60,4.1 64.6,4.8 61.3,8 62.1,12.6 58,10.5 53.9,12.6 54.6,8 51.5,4.8 55.8,4.1" fill="#ef5b5b"/>
+										<polygon points="75,0.5 77,4.1 81.6,4.8 78.3,8 79.1,12.6 75,10.5 70.9,12.6 71.6,8 68.5,4.8 72.8,4.1" fill="#ef5b5b"/>
+									</svg>
+								</span>
+							</p>
+							<p class="feature-trips-order">
+								<a href="#" class="button">Discover</a>
+							</p>
+						</div>
 					</li>
 					<li>
 						<a href="#" class="feature-trips-image">
 							<img src="img/feature-trip-bern.jpg" width="370" height="400">
 						</a>
 						<p class="feature-trips-destination">Bern, Switzerland</p>
-						<p class="feature-trips-rating">Rating :<span class="feature-trips-stars"></span></p>
-						<p class="feature-trips-info">
-							<a href="#" class="button">Discover</a>
-						</p>
+						<div class="feature-trips-info">
+							<p class="feature-trips-rating">Rating :
+								<span class="feature-trips-stars">
+									<svg height="13" width="80">
+										<polygon points="7,0.5 9,4.1 13.6,4.8 10.3,8 11.1,12.6 7,10.5 2.9,12.6 3.6,8 0.5,4.8 4.8,4.1" fill="#ef5b5b"/>
+										<polygon points="24,0.5 26,4.1 30.6,4.8 27.3,8 28.1,12.6 24,10.5 19.9,12.6 20.6,8 17.5,4.8 21.8,4.1" fill="#ef5b5b"/>
+										<polygon points="41,0.5 43,4.1 47.6,4.8 44.3,8 45.1,12.6 41,10.5 36.9,12.6 37.6,8 34.5,4.8 38.8,4.1" fill="#ef5b5b"/>
+										<polygon points="58,0.5 60,4.1 64.6,4.8 61.3,8 62.1,12.6 58,10.5 53.9,12.6 54.6,8 51.5,4.8 55.8,4.1" fill="#ef5b5b"/>
+										<polygon fill="url(#linear-gradient)" points="75,0.5 77,4.1 81.6,4.8 78.3,8 79.1,12.6 75,10.5 70.9,12.6 71.6,8 68.5,4.8 72.8,4.1"/>
+										<lineargradient id="linear-gradient">
+											<stop offset="50%" stop-color="#ef5b5b"/>
+											<stop offset="50%" stop-color="#ffffff"/>
+										</lineargradient>
+									</svg>
+								</span>
+							</p>
+							<p class="feature-trips-order">
+								<a href="#" class="button">Discover</a>
+							</p>
+						</div>
 					</li>
 				</ul>
 			</section>
