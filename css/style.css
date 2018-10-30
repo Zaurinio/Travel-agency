@@ -64,9 +64,14 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.site-navigation > li:not(:last-child) {
+.site-navigation > li {
 	margin-right: 45px;
 }
+
+.site-navigation > li:last-child {
+	margin-right: 0;
+}
+
 
 .site-navigation a {
 	text-transform: uppercase;
@@ -168,8 +173,7 @@ input[type="radio"].visually-hidden {
 	color: #ef5b5b;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4) {
+.site-navigation .site-navigation-dropdown {
 	padding-right: 10px;
 	margin-right: 35px;
 }
@@ -298,6 +302,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	margin: 0;
 	margin-top: -199px;
+	width: 1170px;
 }
 
 .feature-trips-list li:not(:last-child) {
@@ -305,6 +310,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-trips-list li {
+	width: 370px;
 	border-radius: 7px;
 	border-right: 1px solid #d6d6d6;
 	border-bottom: 1px solid #d6d6d6;
@@ -326,7 +332,9 @@ input[type="radio"].visually-hidden {
 
 .feature-trips-image img {
 	border-radius: 7px 7px 0 0 ;
-	vertical-align: top;	
+	vertical-align: top;
+	width: 100%;
+	height: auto;
 }
 
 .feature-trips .title-main {
@@ -416,4 +424,181 @@ input[type="radio"].visually-hidden {
 
 .feature-trips-stars  {
 	vertical-align: middle;
+}
+
+.convenience {
+	background-color: #f0efef;
+	padding-top: 149px;
+	padding-bottom: 149px;
+	position: relative;
+}
+
+.convenience .title-main {
+	text-align: center;
+	font-size: 24px;
+	line-height: 26px;
+	margin-bottom: 9px;
+}
+
+.convenience .sub-title {
+	margin: 0;
+	text-align: center;
+	margin-bottom: 69px;
+	font-size: 28px;
+	line-height: 28px;
+}
+
+.convenience .convenience-list {
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+
+.convenience-item p {
+	margin: 0;
+}
+
+.convenience-image img {
+	vertical-align: top;
+	max-width: 100%;
+	margin-bottom: 31px;
+}
+
+.convenience-list .convenience-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #ffffff;
+	padding-top: 45px;
+	padding-bottom: 50px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 370px;
+	border: 1px solid #cbcbcb;
+}
+
+.convenience-list .convenience-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.convenience-item .convenience-item-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 26px;
+	color: #222222;
+	margin-bottom: 11px;
+}
+
+.convenience-item-description {
+	text-align: center;
+}
+
+.services {
+	background-color: #f0efef;
+	padding-bottom: 150px;
+}
+
+.services p {
+	margin: 0;
+}
+
+.services .title-main {
+	text-align: center;
+	font-size: 24px;
+	line-height: 26px;
+	margin-bottom: 14px;
+}
+
+.services .sub-title {
+	text-align: center;
+	font-size: 28px;
+	line-height: 28px;
+	margin-bottom: 70px;
+}
+
+.services .choose-list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.services .choose-list li {
+	width: 570px;
+	background-color: #ffffff;
+	padding-top: 26px;
+	padding-right: 70px;
+	padding-bottom: 22px;
+	padding-left: 28px;
+	box-shadow: 2px 2px 0 0 #d9d8d8;
+}
+
+.services .choose-list li:nth-child(1),
+.services .choose-list li:nth-child(2) {
+	margin-bottom: 30px; 
+}
+
+.services .choose-list li:nth-child(2n+1) {
+	margin-right: 30px; 
+}
+
+.choose-list .choose-item-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 26px;
+	color: #00b1ff;
+	margin-bottom: 20px;
+}
+
+.convenience-slider-buttons {
+	position: absolute;
+	top: 435px;
+}
+
+.button-left {
+	border: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: #ef5b5b;
+	cursor: pointer;	
+	position: absolute;
+	right: 11px;
+}
+
+.button-right {
+	border: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: #ef5b5b;
+	cursor: pointer;	
+	position: absolute;
+	left: 1183px;
+}
+
+.button-left::before {
+	content: "";
+	width: 14px;
+	height: 16px;	
+	display: block;
+	position: relative;
+	left: -2px;	
+	background-image: url(../img/icon-slider-left.png);
+	background-repeat: no-repeat; 
+}
+
+.button-right::before {
+	content: "";
+	width: 14px;
+	height: 16px;	
+	display: block;
+	position: relative;
+	right: -3px;	
+	background-image: url(../img/icon-slider-right.png);
+	background-repeat: no-repeat; 
 }
