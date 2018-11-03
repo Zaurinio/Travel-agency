@@ -1167,3 +1167,136 @@ input[type="radio"].visually-hidden {
 	top: 36px;
 	left: 130px;
 }
+
+.geography {
+	padding-top: 153px;	
+	background-image: url(../img/geography-image.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+
+.geography-style {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.geography p {
+	margin: 0;
+}
+
+.geography .geography-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.geography-list .geography-item {
+	margin-bottom: 80px;	
+}
+
+/*.geography-list .geography-item:nth-child(2n+1) {	
+	margin-right: 30px;
+}*/
+
+
+.geography-list .geography-item:nth-last-child(-n+2) {
+	margin-bottom: 0;
+}
+
+.geography .geography-country-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.geography .title-main {
+	font-size: 24px;
+	line-height: 26px;
+	text-align: center;
+	margin-bottom: 11px;
+}
+
+.geography .sub-title {
+	font-size: 28px;
+	line-height: 28px;
+	text-align: center;
+	margin-bottom: 34px;
+}
+
+.geography .geography-description {
+	width: 730px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+
+.geography-item .geography-image {
+	text-align: center;
+	margin: 0;
+	flex-shrink: 0;
+	border: 1px solid #cbcbcb;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	margin-right: 27px;
+}
+
+.geography-item .geography-image img {
+	vertical-align: middle;
+}
+
+.geography-list .geography-item {
+	width: 570px;
+	display: flex;
+}
+
+.geography-country-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.geography-item-content {
+	padding-top: 21px;
+}
+
+.geography-list .geography-item-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 26px;
+	color: #222222;
+	margin-bottom: 14px;
+}
+
+.geography-country-list li {
+	margin-right: 15px;
+	font-weight: 600;	
+}
+
+.geography-country-list li::before {
+	content: "";
+	width: 11px;
+	height: 11px;	
+	display: inline-block;
+	background-image: url("../img/icon-circle.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 6px;
+}
+
+.geography .title-main,
+.geography .sub-title,
+.geography .geography-description,
+.geography .geography-list {
+	position: relative;
+	z-index: 5;
+}
