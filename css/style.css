@@ -452,6 +452,7 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 	display: flex;
 	padding: 0;
+	margin: 0;
 }
 
 .convenience-item p {
@@ -460,17 +461,26 @@ input[type="radio"].visually-hidden {
 
 .convenience-image img {
 	vertical-align: top;
-	max-width: 100%;
-	margin-bottom: 31px;
+	max-width: 100%;	
+}
+
+.convenience-image {
+	margin-bottom: 21px;
+	min-height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 .convenience-list .convenience-item {
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	align-items: center;
+	align-items: center;*/
+	text-align: center;
 	background-color: #ffffff;
 	padding-top: 45px;
+	position: relative;
 	padding-bottom: 50px;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -536,10 +546,14 @@ input[type="radio"].visually-hidden {
 	box-shadow: 2px 2px 0 0 #d9d8d8;
 }
 
-.services .choose-list li:nth-child(1),
-.services .choose-list li:nth-child(2) {
+.services .choose-list li {
 	margin-bottom: 30px; 
 }
+
+.services .choose-list li:nth-last-child(-n+2) {
+	margin-bottom: 0; 
+}
+
 
 .services .choose-list li:nth-child(2n+1) {
 	margin-right: 30px; 
@@ -554,12 +568,17 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 20px;
 }
 
-.convenience-slider-buttons {
+.convenience-slider {
+	position: relative;
+}
+
+
+/*.convenience-slider-buttons {
 	position: absolute;
 	top: 435px;
-}
+}*/
 
-.button-left {
+.convenience-slider-buttons .button-left {
 	border: none;
 	width: 28px;
 	height: 28px;
@@ -567,10 +586,13 @@ input[type="radio"].visually-hidden {
 	background-color: #ef5b5b;
 	cursor: pointer;	
 	position: absolute;
-	right: 11px;
+	right: 100%;
+	margin-right: 14px;
+	top: 50%;
+	margin-top: -14px;
 }
 
-.button-right {
+.convenience-slider-buttons .button-right {
 	border: none;
 	width: 28px;
 	height: 28px;
@@ -578,7 +600,10 @@ input[type="radio"].visually-hidden {
 	background-color: #ef5b5b;
 	cursor: pointer;	
 	position: absolute;
-	left: 1183px;
+	left: 100%;
+	margin-left: 14px;
+	top: 50%;
+	margin-top: -14px;
 }
 
 .button-left::before {
@@ -601,4 +626,543 @@ input[type="radio"].visually-hidden {
 	right: -3px;	
 	background-image: url(../img/icon-slider-right.png);
 	background-repeat: no-repeat; 
+}
+
+.tour-packages {
+	padding-top: 145px;
+	padding-bottom: 150px;
+	background-image: url("../img/tour-packages-backround.jpg");
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.tour-packages-slider {
+	position: relative;
+	z-index: 5;
+}
+
+.tour-packages-slider .button-right {
+	border: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: #ef5b5b;
+	cursor: pointer;	
+	position: absolute;
+	/*left: 100%;
+	margin-left: 325px;
+	top: 50%;
+	margin-top: -14px;
+	z-index: 5;*/
+	top: 50%;
+	margin-top: -14px;
+	margin-left: -350px;
+	left: 100%;
+	z-index: 5;
+}
+
+.tour-packages-slider .button-left {
+	border: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: #ef5b5b;
+	cursor: pointer;	
+	position: absolute;
+	right: 100%;
+	margin-right: 14px;
+	top: 50%;
+	margin-top: -14px;
+	margin-right: -350px;
+	z-index: 5;
+}
+
+.tour-packages .background-style {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.tour-packages .title-main {
+	text-align: center;
+	font-size: 25px;
+	line-height: 25px;
+	margin-bottom: 12px;
+	position: relative;
+	z-index: 5;
+}
+
+.tour-packages .sub-title {
+	text-align: center;
+	font-size: 28px;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 74px;
+	position: relative;
+	z-index: 5;
+}
+
+.tour-packages-list {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	flex-shrink: 0;
+	overflow: hidden;
+	justify-content: center;
+	margin: 0;
+	margin-bottom: 150px;
+}
+
+.tour-packages-item {
+	flex-shrink: 0;
+	width: 370px;
+	position: relative;
+	border-radius: 7px;
+	background-color: #ffffff;
+}
+
+.tour-packages-item p {
+	margin: 0;
+}
+
+/*.tour-packages-item:first-of-type img,
+.tour-packages-item:last-of-type img {
+	opacity: 0.6;
+}*/
+
+.tour-packages-item:not(:last-of-type) {
+	margin-right: 30px;
+}
+
+.tour-packages-image {
+	margin: 0;	
+}
+
+.tour-packages-image img {
+	border-radius: 7px 7px 0 0;
+	vertical-align: top;
+	width: 100%;
+	/*height: auto;*/
+	margin-bottom: 10px;
+}
+
+.tour-packages-image a {
+	display: block;
+}
+
+.tour-packages-transfer {
+	position: absolute;
+	top: 0;
+	left: 135px;
+	text-transform: uppercase;
+	background-color: #00b1fa;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 26px;
+	min-width: 100px;
+	padding: 3px 11px;
+	text-align: center;
+}
+
+.by-air::before {
+	content: "";
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	background-image: url("../img/icon-plane.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 4px;
+}
+
+.by-road::before {
+	content: "";
+	width: 16px;
+	height: 12px;
+	display: inline-block;
+	background-image: url("../img/icon-road.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 4px;
+}
+
+.tour-packages-text .tour-packages-title {
+	margin-bottom: 12px;
+}
+
+.tour-packages-title a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 26px;
+	color: #222222;
+}
+
+/*.tour-packages-content {	
+	padding-right: 14px;
+	padding-left: 14px;
+	padding-bottom: 27px;
+}*/
+
+.tour-packages-text {
+	padding-top: 6px;
+	width: 252px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.tour-packages-price,
+.tour-packages-duration {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.tour-packages-terms {
+	width: 60px;
+}
+
+
+.tour-packages-terms .tour-packages-price {
+	/*line-height: 26px;*/
+	margin-bottom: 22px;
+}
+
+.tour-packages-price del {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26px;
+	color: #ef5b5b;
+}
+
+.tour-packages-price ins {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	color: #00b1ff;
+	text-decoration: none;
+}
+
+.tour-packages-duration {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #222222;
+	position: relative;
+	z-index: 0;
+}
+
+.tour-packages-days::before {
+	content: "*";
+	font-size: 14px;
+	line-height: 20px;
+	color: #ef5b5b;
+	position: absolute;
+	left: 16px;
+	top: -2px;
+}
+
+.tour-packages-wrapper {
+	padding-right: 14px;
+	padding-left: 14px;
+	padding-bottom: 21px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #cecece;
+}
+
+.tour-packages-info {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 14px;
+	padding-bottom: 16px;
+	padding-right: 15px;
+	padding-left: 15px;
+	align-items: center;	
+}
+
+.tour-packages-statistics {
+	display: flex;	
+}
+
+.tour-packages-booking {
+	display: block;
+	min-width: 100px;
+	padding: 3px 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26px;
+	color: #ffffff;
+	background-color: #ef5b5b;
+	border-radius: 4px;
+}
+
+.tour-packages-statistics .tour-packages-rating {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 26px;
+	color: #222222;
+	margin-right: 8px;
+}
+
+.tour-packages-review {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 26px;
+	color: #222222;
+}
+
+.tour-packages-statistics .feature-trips-stars {
+	margin-right: 3px;
+}
+
+.tour-packages-style {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 1;
+	border-radius: 7px;
+}
+
+.custom-package {
+	position: relative;
+	z-index: 2;
+}
+
+.custom-package h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 70px;
+}
+
+/*.custom-package-form input,
+.custom-package-form select {
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 22px;
+	color: #808080;	
+}*/
+
+
+.custom-package-form {
+	display: flex;
+	width: 1170px;
+	border: 15px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.custom-package-form input[type=text] {
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 22px;
+	color: #808080;	
+	border-right: 1px solid #b6b6b6;	
+	/*padding: 25px 55px;*/
+}
+
+.custom-package-form .location-form {
+	padding: 25px 48px;
+}
+
+.custom-package-form .form-checkin,
+.custom-package-form .form-checkout {
+	padding: 25px 55px;
+}
+
+/*.custom-package-form input[type=date]::-webkit-datetime-edit-fields-wrapper {
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 22px;
+	color: #808080;
+	padding: 0;
+}*/
+
+.custom-package-form select {
+	-moz-appearance: none;
+  	-webkit-appearance: none;
+  	appearance: none;
+  	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 22px;
+	color: #808080;	
+	min-width: 185px;	
+}
+
+.custom-package-button {
+	display: block;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	background-color: #ef5b5b;
+	min-width: 149px;
+	padding: 26px 29px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.custom-package-form .location-form {
+	min-width: 285px;
+}
+
+.custom-package-form .form-checkin {
+	min-width: 250px;
+}
+
+.custom-package-form .form-checkout {
+	min-width: 271px;
+}
+
+.location-form-label {
+	position: relative;
+}
+
+.location-form-label::before {
+	content: "";
+	width: 16px;
+	height: 18px;
+	background-image: url("../img/icon-location.png");
+	background-repeat: no-repeat;	
+	display: block;
+	background-size: contain;
+	position: absolute;
+	top: 28px;
+	left: 25px;	
+}
+
+.form-checkin-label {
+	position: relative;
+}
+
+.form-checkin-label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/icon-calendar-plus.png");
+	background-repeat: no-repeat;	
+	display: block;
+	background-size: contain;
+	position: absolute;
+	top: 28px;
+	left: 25px;	
+}
+
+.form-checkin-label::after {
+	content: "";
+	border: 7px solid #808080;
+	border-top-width: 7px;
+	border-right-width: 6px;
+	border-left-width: 6px;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	position: absolute;
+	display: block;
+	top: 36px;
+	left: 146px;
+}
+
+
+.form-checkout-label {
+	position: relative;
+}
+
+.form-checkout-label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/icon-calendar-minus.png");
+	background-repeat: no-repeat;	
+	display: block;
+	background-size: contain;
+	position: absolute;
+	top: 28px;
+	left: 25px;	
+}
+
+.form-checkout-label::after {
+	content: "";
+	border: 7px solid #808080;
+	border-top-width: 7px;
+	border-right-width: 6px;
+	border-left-width: 6px;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	position: absolute;
+	display: block;
+	top: 36px;
+	left: 163px;
+}
+
+.form-people {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 54px;
+	padding-right: 43px;
+}
+
+.form-people-label {
+	position: relative;
+}
+
+.form-people-label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/icon-calendar.png");
+	background-repeat: no-repeat;	
+	display: block;
+	background-size: contain;
+	position: absolute;
+	top: 28px;
+	left: 25px;	
+}
+
+.form-people-label::after {
+	content: "";
+	border: 7px solid #808080;
+	border-top-width: 7px;
+	border-right-width: 6px;
+	border-left-width: 6px;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	position: absolute;
+	display: block;
+	top: 36px;
+	left: 130px;
 }
