@@ -631,7 +631,9 @@ input[type="radio"].visually-hidden {
 .tour-packages {
 	padding-top: 145px;
 	padding-bottom: 150px;
-	background-image: url("../img/tour-packages-backround.jpg");
+	/*background-image: url("../img/tour-packages-backround-style.png"), url("../img/tour-packages-backround.jpg");
+	background-blend-mode: normal;*/
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/tour-packages-backround.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -640,6 +642,7 @@ input[type="radio"].visually-hidden {
 .tour-packages-slider {
 	position: relative;
 	z-index: 5;
+	margin-bottom: 150px;
 }
 
 .tour-packages-slider .button-right {
@@ -657,8 +660,9 @@ input[type="radio"].visually-hidden {
 	z-index: 5;*/
 	top: 50%;
 	margin-top: -14px;
-	margin-left: -350px;
-	left: 100%;
+	/*margin-left: -350px;
+	left: 100%;*/
+	right: 0;
 	z-index: 5;
 }
 
@@ -670,11 +674,12 @@ input[type="radio"].visually-hidden {
 	background-color: #ef5b5b;
 	cursor: pointer;	
 	position: absolute;
-	right: 100%;
 	margin-right: 14px;
-	top: 50%;
 	margin-top: -14px;
-	margin-right: -350px;
+	/*margin-right: -350px;*/
+	top: 50%;
+	/*right: 100%;*/
+	left: 0;
 	z-index: 5;
 }
 
@@ -711,12 +716,12 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 	padding: 0;
 	display: flex;
-	width: 100%;
-	flex-shrink: 0;
+	/*width: 100%;
+	flex-shrink: 0;*/
 	overflow: hidden;
 	justify-content: center;
 	margin: 0;
-	margin-bottom: 150px;
+	
 }
 
 .tour-packages-item {
@@ -726,6 +731,19 @@ input[type="radio"].visually-hidden {
 	border-radius: 7px;
 	background-color: #ffffff;
 }
+
+.packages-item-fill::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 5;
+	border-radius: 7px;
+}
+
 
 .tour-packages-item p {
 	margin: 0;
@@ -741,15 +759,16 @@ input[type="radio"].visually-hidden {
 }
 
 .tour-packages-image {
-	margin: 0;	
+	margin: 0;
+	margin-bottom: 10px;
+	border-radius: 7px 7px 0 0;
+	overflow: hidden;
 }
 
-.tour-packages-image img {
-	border-radius: 7px 7px 0 0;
+.tour-packages-image img {		
 	vertical-align: top;
 	width: 100%;
-	/*height: auto;*/
-	margin-bottom: 10px;
+	/*height: auto;*/	
 }
 
 .tour-packages-image a {
@@ -759,7 +778,8 @@ input[type="radio"].visually-hidden {
 .tour-packages-transfer {
 	position: absolute;
 	top: 0;
-	left: 135px;
+	left: 50%;
+	transform: translateX(-50%);
 	text-transform: uppercase;
 	background-color: #00b1fa;
 	color: #ffffff;
@@ -779,7 +799,7 @@ input[type="radio"].visually-hidden {
 	display: inline-block;
 	background-image: url("../img/icon-plane.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	margin-right: 4px;
 }
 
@@ -790,7 +810,7 @@ input[type="radio"].visually-hidden {
 	display: inline-block;
 	background-image: url("../img/icon-road.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	margin-right: 4px;
 }
 
@@ -814,7 +834,8 @@ input[type="radio"].visually-hidden {
 
 .tour-packages-text {
 	padding-top: 6px;
-	width: 252px;
+	max-width: 252px;
+	flex-grow: 1;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -829,7 +850,9 @@ input[type="radio"].visually-hidden {
 }
 
 .tour-packages-terms {
-	width: 60px;
+	/*width: 60px;*/
+	flex-shrink: 0;
+	max-width: 85px;
 }
 
 
@@ -865,14 +888,14 @@ input[type="radio"].visually-hidden {
 	z-index: 0;
 }
 
-.tour-packages-days::before {
+.attention::before {
 	content: "*";
 	font-size: 14px;
 	line-height: 20px;
 	color: #ef5b5b;
-	position: absolute;
+	/*position: absolute;
 	left: 16px;
-	top: -2px;
+	top: -2px;*/
 }
 
 .tour-packages-wrapper {
@@ -881,7 +904,7 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 21px;
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
 	border-bottom: 1px solid #cecece;
 }
 
@@ -972,10 +995,13 @@ input[type="radio"].visually-hidden {
 
 .custom-package-form {
 	display: flex;
-	width: 1170px;
+	/*width: 1170px;*/
 	border: 15px solid rgba(255, 255, 255, 0.5);
 }
 
+.custom-package-form label {
+	display: flex;
+}
 
 .custom-package-form input[type=text] {
 	border: none;
@@ -985,7 +1011,7 @@ input[type="radio"].visually-hidden {
 	line-height: 22px;
 	color: #808080;	
 	border-right: 1px solid #b6b6b6;	
-	/*padding: 25px 55px;*/
+	/*padding: 25px 55px;*/	
 }
 
 .custom-package-form .location-form {
@@ -1012,6 +1038,7 @@ input[type="radio"].visually-hidden {
   	-webkit-appearance: none;
   	appearance: none;
   	border: none;
+  	border-radius: 0;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	font-size: 20px;
@@ -1170,7 +1197,8 @@ input[type="radio"].visually-hidden {
 
 .geography {
 	padding-top: 153px;	
-	background-image: url(../img/geography-image.jpg);
+	padding-bottom: 150px;
+	background-image: linear-gradient(to top, rgba(255, 255,255, 0.9),rgba(255, 255,255, 0.9)), url(../img/geography-image.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	position: relative;
@@ -1287,10 +1315,16 @@ input[type="radio"].visually-hidden {
 	width: 11px;
 	height: 11px;	
 	display: inline-block;
-	background-image: url("../img/icon-circle.png");
+	border-radius: 50%;
+	background-color: inherit;
+	border: 1px solid #00b1ff;
+	/*background-image: url("../img/icon-circle.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
 	margin-right: 6px;
+	border-radius: 50%;
+	background-color: inherit;
+	border-radius: 1px solid #00b1ff;
 }
 
 .geography .title-main,
@@ -1299,4 +1333,107 @@ input[type="radio"].visually-hidden {
 .geography .geography-list {
 	position: relative;
 	z-index: 5;
+}
+
+.tour-packages-slider-buttons {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;	
+}
+
+.statistics {
+	background-color: #ef5b5b;
+	padding-top: 115px;
+	padding-bottom: 110px;
+}
+
+.statistics .statistics-list {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+}
+
+.statistics .statistics-item {
+	display: flex;	
+	width: 300px;
+}
+
+.statistics .statistics-item:last-of-type {
+	justify-content: flex-end;
+}
+
+
+.statistics-item-quantity {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: auto;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 16px;
+}
+
+.statistics-item-title {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
+}
+
+.statistics-clients::before {
+	content: "";
+	width: 54px;
+	height: 50px;
+	background-image: url("../img/icon-clients.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	position: relative;
+	margin-right: 17px;
+	top: 6px;
+	flex-shrink: 0;
+}
+
+.statistics-members::before {
+	content: "";
+	width: 54px;
+	height: 50px;
+	background-image: url("../img/icon-yellow-plane.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	position: relative;
+	margin-right: 17px;
+	top: 6px;
+}
+
+.statistics-flag::before {
+	content: "";
+	width: 54px;
+	height: 50px;
+	background-image: url("../img/icon-flag.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	position: relative;
+	margin-right: 17px;
+	top: 6px;
+}
+
+.statistics-winings:before {
+	content: "";
+	width: 54px;
+	height: 50px;
+	background-image: url("../img/icon-cup.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	position: relative;
+	margin-right: 17px;
+	top: 6px;
 }
