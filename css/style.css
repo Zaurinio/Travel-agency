@@ -1437,3 +1437,14 @@ input[type="radio"].visually-hidden {
 	margin-right: 17px;
 	top: 6px;
 }
+
+.video-background {
+	background-image: url("../img/video-background.png");
+}
+
+.video-tour {
+	height: 1290px;
+	background-image: url(../img/video-background-plane.png), linear-gradient(to top, rgba(101, 208, 255, 0.5), rgba(101, 208, 255, 0.5)), url("../img/video-tour-background.png");
+	background-repeat: no-repeat;
+	background-position: 0 265px, 0 0 , 0 0;
+}
